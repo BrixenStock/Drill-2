@@ -1,0 +1,52 @@
+        body 
+        {
+            font-family: 'Courier New', Courier, monospace;
+            background: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #box 
+        {
+            background: black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            width: 300px;
+            text-align: center;
+            color:White;
+        }
+        #header h1 
+        {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        input, select, button 
+        {
+            margin: 10px 0;
+            padding: 8px;
+            width: 90%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button 
+        {
+            background: #0078d7;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover 
+        {
+            background: #005fa3;
+        }
+        #output 
+        {
+            margin-top: 15px;
+            padding: 10px;
+            border: 1px solid #0078d7;
+            border-radius: 5px;
+            background: #e6f2ff;
+            font-weight: bold;
+        }

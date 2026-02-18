@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+    <div id="box">
+
+        <div id="header">
+            <h1>Basic Calculator Version 2.0</h1>
+        </div>
+        
+            <form>
+            <label for="num1">Enter your 1st Number:</label><br>
+            <input type="text" id="num1" placeholder="Input your second number">
+            <br>
+            <label for="num2">Enter your 2nd Number:</label><br>
+            <input type="text" id="num2" placeholder="Input your second number">
+            <br>
+            <label for="result">Choose operation:</label><br>
+            <select id="result">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+            </form> 
+            <br>
+
+            <button onclick="display()">Calculate</button>
+    </div>
+
+
+    <script>
+        function display(){
+            let num1= Number(document.getElementById("num1").value);
+            let num2= Number(document.getElementById("num2").value);
+            let oper= document.getElementById("result").value;
+            let results;
+
+            if (oper === "+"){
+                results = num1 + num2;
+            }
+
+            else if (oper === "-"){
+                results = num1 - num2
+            }
+
+            else if (oper === "*"){
+                results = num1 * num2
+            }
+
+            else if (oper === "/"){
+                if (num2 === 0){
+                    alert("Calc Error: Cannot divide by 0!")
+                    return;
+                }
+                results = num1 / num2
+            }
+
+            alert("The result is:" +
+                 results);
+        }
+    </script>
+
+</body>
+</html>
